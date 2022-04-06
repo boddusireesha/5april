@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Windows object methods</title>
+  </head>
+  <style>
+      img{
+          width: 80%;
+          height: 800px;
+          float: right;
+      }
+  </style>
+  <body>
+    <div>
+        <img src="image/pexels-gotta-be-worth-it-919278.jpg">
+      </div>
+    <script>
+      function msg() {
+        setTimeout(function () {
+          alert("Welcome to JavaScript programming after 2 seconds");
+        }, 2000);
+      }
+
+      function alr() {
+        alert("This page display alert method display");
+        open("https://www.w3schools.com/js/js_window_location.asp");
+      }
+
+      function alr1() {
+        var c = prompt("");
+        var c = confirm("Are you sure?");
+        if (c == true) {
+          alert("ok");
+        } else {
+          alert("cancel");
+        }
+      }
+    </script>
+    <input
+      type="button"
+      value="click"
+      onclick="msg()"
+      style="
+        background-color: rgb(33, 115, 231);
+        border-radius: 5px;
+        font-size: 15px;
+        margin: 25px;
+      "
+    /><br />
+    <input type="button" value="submit" onclick="alr()" style="
+    background-color: rgb(134, 152, 12);
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 25px;
+  "><br />
+    <input type="button" value="delete record" onclick="alr1()" style="
+    background-color: rgb(10, 96, 105);
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 25px;
+  ">
+  </body>
+</html>
